@@ -11,5 +11,4 @@ public interface PurchaseRepository {
     Optional<List<Purchase>> getByClient(String clientId);
     Purchase save(Purchase purchase);
 
-
 }

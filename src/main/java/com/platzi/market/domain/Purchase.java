@@ -4,6 +4,17 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Purchase {
+
+    private int purchaseId;
+    private String clientId;
+    private LocalDateTime date;
+    private String paymentMethod;
+    private String comment;
+    private String state;
+    private List<PurchaseItem> items;
+
+    // GETTERS AND SETTERS
+
     public int getPurchaseId() {
         return purchaseId;
     }
@@ -53,18 +64,10 @@ public class Purchase {
     }
 
     public List<PurchaseItem> getItem() {
-        return item;
+        return items;
     }
 
     public void setItem(List<PurchaseItem> item) {
-        this.item = item;
+        this.items = item;
     }
-
-    private int purchaseId;
-    private String clientId;
-    private LocalDateTime date;
-    private String paymentMethod;
-    private String comment;
-    private String state;
-    private List<PurchaseItem> item;
 }
