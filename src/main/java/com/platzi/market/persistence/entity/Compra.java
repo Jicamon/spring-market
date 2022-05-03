@@ -28,7 +28,7 @@ public class Compra {
     private String estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_compra", insertable = false, updatable = false)
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
     private Cliente cliente;
 
     @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL}) // Todos los procesos que se hacen contra la BD se hacen en cascada
